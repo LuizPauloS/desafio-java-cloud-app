@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.card {
+  margin-top: 60px;
+}
+
+.card-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-save {
+  text-align: right;
+  padding-top: 10px;
+}

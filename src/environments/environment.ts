@@ -1,16 +1,19 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
+const api = 'http://ec2-3-83-15-79.compute-1.amazonaws.com:8080/java-cloud/v1';
 
 export const environment = {
-  production: false
+  production: false,
+  vehicle: {
+    all: `${api}/vehicle/all`,
+    save: `${api}/vehicle/save`,
+    edit: `${api}/vehicle/update`,
+    byId: `${api}/vehicle/`,
+    delete: `${api}/vehicle/delete`
+  },
+  vehicle_type: {
+    all: `${api}/vehicle-type/all`,
+    save: `${api}/vehicle-type/save`,
+    edit: `${api}/vehicle-type/update`,
+    byId: `${api}/vehicle-type/`,
+    delete: `${api}/vehicle-type/delete`
+  }
 };
-
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
