@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/desafio-java-cloud-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
