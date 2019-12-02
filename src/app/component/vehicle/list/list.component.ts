@@ -18,6 +18,7 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.spinner.show();
+    this.vehicles = [];
     this.getAllVehicles();
   }
 

@@ -4,17 +4,17 @@
     NEW VEHICLE TYPE
   </div>
   <div class="card-body">
-    <form>
+    <form [formGroup]="formVehicleType">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name">
+        <input type="text" class="form-control" id="name" formControlName="name">
       </div>
       <div class="form-group">
         <label for="description">Description</label>
-        <input type="text" class="form-control" id="description">
+        <input type="text" class="form-control" id="description" formControlName="description">
       </div>
       <div class="btn-save">
-        <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i></button>
+        <button type="submit" class="btn btn-primary" (click)="save()"><i class="fa fa-floppy-o"></i></button>
       </div>
     </form>
   </div>

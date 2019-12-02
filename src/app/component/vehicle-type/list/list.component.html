@@ -1,1 +1,40 @@
-<p>list works!</p>
+<app-spinner></app-spinner>
+<app-header></app-header>
+<div class="card">
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vehicleType of vehicleTypes">
+          <th scope="row">{{ vehicleType.id }}</th>
+          <td>{{ vehicleType.name }}</td>
+          <td>{{ vehicleType.description }}</td>
+          <td>
+            <a>
+              <button class="btn">
+                <i class="fa fa-search"></i>
+              </button>
+            </a>
+            <a>
+              <button class="btn">
+                <i class="fa fa-edit"></i>
+              </button>
+            </a>
+            <a>
+              <button class="btn">
+                <i class="fa fa-trash"></i>
+              </button>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
