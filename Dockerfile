@@ -1,10 +1,10 @@
 ### Multi Stage Build ###
 ### Estágio 1 - Obter o source e gerar o build ###
-FROM node:latest AS ng-builder
+FROM node:12.7-alpine AS ng-builder
 RUN mkdir -p /app
 WORKDIR /app
 COPY package.json /app
-RUN npm install
+RUN  npm install && npm install -g @angular/cli
 COPY . /app
 RUN $(npm bin)/ng build
 
