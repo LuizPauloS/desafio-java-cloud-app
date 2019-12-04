@@ -9,12 +9,14 @@ import { SaveComponent } from '../component/vehicle/save/save.component';
 import { EditComponent } from '../component/vehicle/edit/edit.component';
 import { ListComponent } from '../component/vehicle/list/list.component';
 import { VehicleTypeService } from '../service/imp/vehicle-type.service';
+import { DetailComponent } from './../component/vehicle/detail/detail.component';
 
 @NgModule({
   declarations: [
     SaveComponent,
     EditComponent,
-    ListComponent
+    ListComponent,
+    DetailComponent
   ],
   imports: [
     SharedModule,

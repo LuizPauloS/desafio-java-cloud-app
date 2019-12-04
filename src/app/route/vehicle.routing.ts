@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'save', pathMatch: 'full' },
   { path: 'save', component: SaveComponent },
   { path: 'list', component: ListComponent },
+  { path: 'detail/:id', component: SaveComponent },
 ];
 
 @NgModule({
