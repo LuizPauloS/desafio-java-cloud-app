@@ -1,4 +1,4 @@
-const api = 'http://localhost:8080/java-cloud/v1';
+const api = 'http://ec2-3-83-15-79.compute-1.amazonaws.com:8080/java-cloud/v1';
 
 export const environment = {
   production: false,
