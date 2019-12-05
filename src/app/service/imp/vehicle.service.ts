@@ -21,7 +21,7 @@ export class VehicleService implements BaseService<Vehicle> {
   }
 
   byId(id: number): Observable<Vehicle> {
-    return this.http.get<Vehicle>(`${environment.vehicle.byId}/${id}`, httpOptions);
+    return this.http.get<Vehicle>(`${environment.vehicle.byId}?id=${id}`, httpOptions);
   }
 
   update(vehicle: Vehicle): Observable<Vehicle> {
