@@ -16,8 +16,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     AppRouting,
     SharedModule,
-    HttpClientModule,
     NgxSpinnerModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()
   ],
